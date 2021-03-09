@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TutoWpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="TutoWpf" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListView ItemsSource="{Binding Dailies}" SelectedItem="{Binding SelectedDaily, Mode=TwoWay}" DisplayMemberPath="Task"/>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Content="Tâche" Margin="10 10 10 0"/>
+            <TextBox Grid.Row="1" Text="{Binding SelectedDaily.Task, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="10 0"/>
+
+            <Label Grid.Row="2" Content="Description de la tâche" Margin="10 10 10 0"/>
+            <TextBox Grid.Row="3" Text="{Binding SelectedDaily.Description, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="10 0"/>
+
+            <Label Grid.Row="4" Content="Détail de la tâche" Margin="10 10 10 0"/>
+            <TextBox Grid.Row="5" Text="{Binding SelectedDaily.Details, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="10 0"/>
+
+            <Label Grid.Row="6" Content="But de la tâche" Margin="10 10 10 0"/>
+            <TextBox Grid.Row="7" Text="{Binding SelectedDaily.Goal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="10 0"/>
+
+
+        </Grid>
         
+
     </Grid>
 </Window>

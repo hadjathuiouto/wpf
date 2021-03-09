@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1267
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutoWpf", "TutoWpf\TutoWpf.csproj", "{F88FA545-50E2-4337-B757-D4B3114080B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutoWpf.UI", "TutoWpf\TutoWpf.UI.csproj", "{F88FA545-50E2-4337-B757-D4B3114080B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutoWpf.Models", "TutoWpf.Models\TutoWpf.Models.csproj", "{FB30D3DD-D421-41F4-966B-A46184B60155}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutoWpf.DataAccess", "TutoWpf.DataAccess\TutoWpf.DataAccess.csproj", "{5BB290D3-B8F4-4DF4-8503-9FB1E81D0CC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{F88FA545-50E2-4337-B757-D4B3114080B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F88FA545-50E2-4337-B757-D4B3114080B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F88FA545-50E2-4337-B757-D4B3114080B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB30D3DD-D421-41F4-966B-A46184B60155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB30D3DD-D421-41F4-966B-A46184B60155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB30D3DD-D421-41F4-966B-A46184B60155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB30D3DD-D421-41F4-966B-A46184B60155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB290D3-B8F4-4DF4-8503-9FB1E81D0CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB290D3-B8F4-4DF4-8503-9FB1E81D0CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB290D3-B8F4-4DF4-8503-9FB1E81D0CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB290D3-B8F4-4DF4-8503-9FB1E81D0CC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
